@@ -1,0 +1,24 @@
+server:
+  port: 8080
+spring:
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/api_teste_solid
+    password: postgres
+    username: postgres
+    driverClassName: org.postgresql.Driver
+  mail:
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: 'true'
+          auth: 'true'
+    host: smtp.gmail.com
+    username: samuelduartedecordova@gmail.com
+    password: "kvis iizy jwpl stit"
+    port: '587'
